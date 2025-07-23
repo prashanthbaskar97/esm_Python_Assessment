@@ -17,6 +17,7 @@ python = "^3.13"
 fastapi = {extras = ["standard"], version = "^0.116.0"}
 pandas = "^2.3.1"
 kagglehub = "^0.3.12"
+PyJWT = "^2.8.0"  # Adding this line
 
 [tool.poetry.group.dev.dependencies]
 bump2version = "^1.0.1"

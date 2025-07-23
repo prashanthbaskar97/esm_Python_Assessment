@@ -13,11 +13,12 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import { Dashboard } from "./pages/dashboard";
 import { Layout } from "./Layout";
 
-import { authProvider } from "./authProvider";
+// Fixed import - using default import instead of named import
+import authProvider from "./authProvider";
 import { dataProvider } from "./dataProvider";
 
 import { RaceList, RaceShow } from "./pages/races";
-import { DriverList, DriverShow } from "./pages/drivers";
+import { DriverList, DriverShow, DriverCreate, DriverEdit} from "./pages/drivers";
 
 export const App = () => (
   <Admin
@@ -37,6 +38,9 @@ export const App = () => (
       name="drivers"
       list={DriverList}
       show={DriverShow}
+      // Edit and Create components for drivers
+      create={DriverCreate}
+      edit={DriverEdit}
     />
     <Resource
       icon={Filter1Icon}
