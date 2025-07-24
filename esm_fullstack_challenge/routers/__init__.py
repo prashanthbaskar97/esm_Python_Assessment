@@ -3,4 +3,5 @@ from esm_fullstack_challenge.routers.basic import basic_router
 from esm_fullstack_challenge.routers.dashboard import dashboard_router
 from esm_fullstack_challenge.routers.drivers import drivers_router
 from esm_fullstack_challenge.routers.races import races_router
+from esm_fullstack_challenge.routers.users import users_router
 from esm_fullstack_challenge.routers.utils import get_route_list_function, get_route_id_function

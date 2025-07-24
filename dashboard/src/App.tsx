@@ -20,6 +20,8 @@ import { dataProvider } from "./dataProvider";
 import { RaceList, RaceShow } from "./pages/races";
 import { DriverList, DriverShow, DriverCreate, DriverEdit} from "./pages/drivers";
 
+import { UserList, UserShow, UserCreate, UserEdit } from "./pages/users";
+import PeopleIcon from "@mui/icons-material/People";
 export const App = () => (
   <Admin
     layout={Layout}
@@ -41,6 +43,14 @@ export const App = () => (
       // Edit and Create components for drivers
       create={DriverCreate}
       edit={DriverEdit}
+    />
+      <Resource
+      icon={PeopleIcon}
+      name="users"
+      list={UserList}
+      show={UserShow}
+      create={UserCreate}
+      edit={UserEdit}
     />
     <Resource
       icon={Filter1Icon}
